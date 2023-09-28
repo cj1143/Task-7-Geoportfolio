@@ -1,0 +1,291 @@
+<!doctype html>
+<html>
+<head> <!--Contains Metadata only. Little needs to be changed in this section-->
+<meta charset="utf-8">
+<title>Geoportfolio</title> <!--Changes the name on the tab-->
+	<link rel="stylesheet" href="geoportfoliocss.css"> <!--#ID# #CSS# Put the name of your CSS document and file extension in href e.g. href="geoportfolio.css"-->
+	<link rel="icon" type="image/x-icon" href="favicon.png"> <!--#ID# #FAVICON# This changes the picture shown on the tab. Change the file name under href to your desired image e.g. href="favicon.png"-->
+</head>
+
+<body> <!--Everything in between <body> and </body> affects the display of your Geoportfolio and what is shown-->
+	<!--Start of navigation bar-->
+	<div id="sidebar" class="sidebar-animate-open" style="display:none"> <!--MUST BE AT TOP OF DOCUMENT-->
+		<button onclick="close_sidebar()" class="sidebar-menu-button close-sidebar-button">&times;</button>
+		<a href="#topofpage" class="sidebar-menu-button mainbutton">Home</a>
+		<a href="#about" class="sidebar-menu-button mainbutton">About</a>
+		<a href="#academicinfo" class="sidebar-menu-button mainbutton">Academic Information</a>
+		<a href="#industryexperience" class="sidebar-menu-button mainbutton">Industry Experience</a>
+		<a href="#sap" class="sidebar-menu-button mainbutton">Skills and Proficiencies</a>
+		<a href="#credits" class="sidebar-menu-button mainbutton">Acknowledgements</a>
+		<div class="other-sidebar-info">
+			<table class="sidebar-contact-table"> 
+				<tr>
+					<td>
+						<a href="https://www.linkedin.com/in/christopher-johnson-2b5a20216/" target="_blank"><img src="linkedin.png" class="sidebar-images"></a> <!-- #ID# #LINKEDIN# Change LinkedIn link to one of your profile page -->
+					</td>
+					<td>
+						<a href=https://www.linkedin.com/in/christopher-johnson-2b5a20216/" target="_blank">LinkedIn</a> <!-- #ID# #LINKEDIN# Change LinkedIn link to one of your profile page-->
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://twitter.com/RMIT" target="_blank"><img src="twitter.png" class="sidebar-images"></a>
+					</td>
+					<td>
+						<a href="https://twitter.com/RMIT" target="_blank">Twitter</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<!--End of navigation bar-->
+
+	<div class="header"> <!--Code for Header that opens the sidebar. DO NOT TOUCH-->
+		<button class="sidebar-menu-button open-sidebar-button" onclick="open_sidebar()">&#9776;</button>
+	</div>
+	
+	<div class="mapbgdiv" id="topofpage">
+		<img src="taxi_trips.jpg" alt="map" class="mapbg">
+		<div class="title">
+			<h1>Geoportfolio</h1>
+			<h2>Christopher Johnson</h2>
+		</div>
+	</div>
+
+	<!--ABOUT-->
+	<div class="intro bar" id="about"><h2>About</h2></div>
+	<div class="about">
+		This website is the geoportfolio of Christopher Johnson which was made for the subject Professional Practice. The website entails
+		information that is academically and profesionally related to the field of geospatial science.
+		<p>
+		My name is Chris and I am a dedicated data professional with a rich academic background in Geospatial Science and hands-on experience in 
+		data science, analysis, and pipeline development. I have Demonstrated expertise in leveraging Python for machine learning, 
+		data engineering, and automation, combined with in-depth knowledge of cloud platforms such as AWS and Azure. 
+		I am Proficient in SQL, database management, and advanced GIS tools, underpinned by a solid foundation in data-driven 
+		decision-making from diverse sources. I Possesses a keen eye for detail and a passion for deriving meaningful insights 
+		from complex data landscapes. I am always Eager to bring a fusion of geospatial expertise and data science skills to any challenge.
+		</p>
+		<p>
+		My own personal hobbies include jogging and travelling! More detailed information can be found in the About page!
+		</p>	
+	<img src="self-portrait.jpg" class="self-portrait"> 
+	</div>
+	
+	<!--ACADEMIC PORTFOLIO-->
+	<div class="pagetitle" id="academicinfo">
+        <span class="title-ul">Academic Portfolio Overview</span>
+    </div>
+
+	<!--PRJ 1-->
+	
+	<div class="bar"><h2>Project 1: Cloud-Based Visualization of Live Weather Data</h2></div>
+	<div class="academic-intro">
+		Implemented a cloud-based solution for live visualization of weather data across Victoria, using a hexagonal 
+		grid system to represent spatial trends. The project involved data collection, database management, automation, 
+		server setup, web development, and cloud computing.
+		<ul>
+			<li>Practical 2: Map directed at a target audience of choice using provided data of Melbourne City</li>
+			<li>Practical 3: Thematic mapping of a demographic's population using data from the Australian Bureau of Statistics (ABS)</li>
+			<li>Final Cartography Map: Free-choice on topic</li>
+		</ul>
+		<p>
+			<a href="https://github.com/chrisxj33/Cloud-Based-Visualisation-of-Live-Weather-Data">Full Documentation</a>
+		</p>		
+		<img src="weather_project.png" class="ls-image">
+	</div>
+
+	<!--PRJ 2-->
+
+	<div class="bar"><h2>Project 2: Predictive Crash Modelling</h2></div>
+	<div class="academic-intro">
+		<p>
+		Conducting an in-depth research project to model and predict crash severity and density in the Greater Melbourne region, 
+		Victoria. Leveraging advanced techniques such as random forest algorithms and autoencoding for embedding road networks. 
+		Using the H3 Python library to aggregate data into cells for spatial analysis. Extensive use of Python and Pandas for 
+		data processing and analysis. Demonstrating the entire Data Science process from data collection to advanced model 
+		evaluation statistics. 
+		</p>
+		<img src="pred_model.png" class="ls-image">
+	</div>	
+
+	<!--PRJ 3-->
+
+	<div class="bar"><h2>Project 3: Spotify ETL Pipeline</h2></div>
+	<div class="academic-intro">
+		<p>
+		Developed an automated and scalable ETL pipeline that extracted daily data from Spotify's 'Top 50 Tracks' playlist, 
+		transformed the data using Python and Pandas, and loaded it into an AWS S3 bucket. Utilized Apache Airflow for scheduling 
+		and monitoring the workflow, implemented secure access to S3 buckets using AWS IAM, and set up an EC2 instance for running 
+		the Airflow server. Successfully automated the ETL process, providing a daily updated snapshot of music trends. This project 
+		showcased proficiency in automating data workflows, managing cloud resources, and interacting with APIs.
+		</p>
+		<p>
+			<a href="https://github.com/chrisxj33/Spotify-ETL-Pipeline/tree/main">Full Documentation</a>
+		</p>	
+		<img src="spotify_prj.png" class="ls-image">
+	</div>	
+
+	<!--INDUSTRY EXPERIENCE-->
+
+	<div class="pagetitle" id="industryexperience">
+        <span class="title-ul">Industry Experience</span>
+    </div>
+	<div class="academic-intro">
+		This page will briefly cover all my work experience (as of September 2023) within the geospatial science industry. The two main companies that I have worked at 
+		were Place Intelligence and M.J Reddie Surveys. This page will outline my experience gained and skills I have learned from working at these companies.
+	</div>
+
+	<!--COMPANY 1-->
+
+    <div class="bar"><h3>Place Intelligence</h3></div> 
+	<img src="place_int.jpg" class="company-logo">
+	<div class="job-title">Data Analyst</div> <!-- #ID# #COMPANY# Change to your company position-->
+	<div class="job-time">November 2022 - June 2023</div> <!--Change the month and year worked-->
+	<div class="job-overview">
+		<li>Leveraging ArcGIS & QGIS to design and construct Australia wide geospatial datasets for a variety of applications</li>
+		<li>Employing GIS tools to conduct spatial analyses and provide insight on urban traffic data</li>
+		<li>Implementing Python within the QGIS environment to automate processes and enhance productivity</li>
+		<li>Responsible for collecting data from a variety of sources such as databases and APIs</li>
+		<li>Worked as a team on projects, signifying the importance of good team communication</li>
+	</div>
+
+	<!--COMPANY 2-->
+
+	<div class="bar"><h3>M.J Reddie Surveys</h3></div> <!-- #ID# #COMPANY# Change to your company name-->
+	<img src="mj_reddie.jpg" class="company-logo">
+	<div class="job-title">Surveying Assistant</div> <!-- #ID# #COMPANY# Change to your company position-->
+	<div class="job-time">December 2021 - July 2022</div> <!--Change the month and year worked-->
+	<div class="job-overview">
+		<li>Engaged in feature and re-establishment surveys as part of a dynamic team, demonstrating cooperative skills</li>
+		<li>Operated sophisticated surveying equipment such as total stations and GPS, highlighting technical acumen</li>
+		<li>Maintained a keen emphasis on accuracy and diligence, ensuring measurements were precise and reliable</li>
+		<li>Performed on-site calculations and sketching, illustrating an aptitude for real-time problem-solving and data interpretation</li>
+	</div>
+
+	<!--Skills and Proficiencies table-->
+	<div class="bar" style="top:57px" id="sap"><h2>Skills and Proficiencies</h2></div> <!-- #ID# #SKILLS# -->
+    <div class="skills">
+        <table class="icontable">
+            <tr>
+                <td><img src="Icons/deep-learning.png" class="iconimages"></td>
+				<td>Machine Learning</td>
+                <td><img src="Icons/gis.png" class="iconimages"></td>
+				<td>QGIS</td>
+            </tr>
+			<tr>
+                <td><img src="Icons/python.png" class="iconimages"></td>
+				<td>Python</td>
+                <td><img src="Icons/web-design.png" class="iconimages"></td>
+				<td>Web Design</td>
+            </tr>
+			<tr>
+                <td><img src="Icons/connection.png" class="iconimages"></td>
+				<td>Data Engineering</td>
+                <td><img src="Icons/sql.png" class="iconimages"></td>
+				<td>SQL</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+	<!-- #ID# #CREDITS#-->
+	<div class="pagetitle" id="credits">
+        <span class="title-ul">Credits and Attributions</span>
+    </div>
+    
+    <div class="academic-intro">
+       <b> The following programming languages and software were used to create the website</b>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Visual Studio Basic</li>
+        </ul>
+       <b>Special thanks to the following people who have helped me make this website with their expertise and guidance:</b>
+        <ul>
+            <li>Chayn Sun</li>
+            <li>Nicholas Lee</li>
+            <li><a href="https://www.w3schools.com/">W3Schools</a> and <a href="https://stackoverflow.com/">Stack Overflow</a></li>
+            <li><a href="https://www.flaticon.com/">Flaticon</a></li>
+        </ul>
+        As per the policy of using the Flaticons with a free account, the attributions and crediting of the creators of the icons are as below:
+		
+	<div class="bar"><h2>Attributions of icons used:</h2></div>
+    <table id="attribution-table">
+        <tr>
+			
+            <th><a href="https://www.flaticon.com/free-icon/deep-learning_2103832?related_id=2103832" title="database icons">Deep learning icon created by Becris - Flaticon</a></th>
+            <th><img src="Icons/deep-learning.png" class="icon-attribute"></th>
+        </tr>
+        <tr>
+            <th><a href="https://www.flaticon.com/free-icons/gis" title="gis icons">Gis icons created by Freepik - Flaticon</a>
+            <th><img src="Icons/gis.png" class="icon-attribute"></th>
+        </tr>
+        <tr>
+            <th><a href="https://www.flaticon.com/free-icons/python-file" title="python file icons">Python file icons created by Smashicons - Flaticon</a></th>
+            <th><img src="Icons/python.png" class="icon-attribute"></th>
+        </tr>
+        <tr>
+            <th><a href="https://www.flaticon.com/free-icons/product" title="product icons">Product icons created by popcornarts - Flaticon</a></th>
+            <th><img src="Icons/web-design.png" class="icon-attribute"></th>
+        </tr>
+		<tr>
+            <th><a href="https://www.flaticon.com/free-icons/interoperability" title="interoperability icons">Interoperability icons created by Freepik - Flaticon</a></th>
+            <th><img src="Icons/connection.png" class="icon-attribute"></th>
+        </tr>
+		<tr>
+            <th><a href="https://www.flaticon.com/free-icons/sql" title="sql icons">Sql icons created by Freepik - Flaticon</a></th>
+            <th><img src="Icons/sql.png" class="icon-attribute"></th>
+        </tr>
+		<tr>
+            <th><a href="https://www.flaticon.com/free-icons/twitter-logo" title="twitter logo icons">Twitter icons created by Md Tanvirul Haque - Flaticon</a></th>
+            <th><img src="twitter.png" class="icon-attribute"></th>
+        </tr>
+		<tr>
+            <th><a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Freepik - Flaticon</a></th>
+            <th><img src="linkedin.png" class="icon-attribute"></th>
+        </tr>
+    </table>
+	</div>
+
+
+	
+	<div class="footer"> <!-- #ID# #FOOTER# -->
+		<div class="compilationinformation"> <!-- #ID# #COMPINFO# -->
+			<b>Compilation information</b>
+			<br>Website made in Visual Studio Code.
+			<br>HTML and CSS code written by Odeo as part of undergraduate Professional Practice course (GEOMOD10).
+		</div>
+		<table class="contacttable">
+			<caption><h2>Contact Information</h2></caption>
+			<tr>
+				<th><img src="mappin.png" alt="pointer" class="contactimages"></th>
+				<th><img src="mail.png" alt="email" class="contactimages"></th>
+				<th><img src="phone.png" alt="phone" class="contactimages"></th>
+			</tr>
+			<tr>
+				<th>
+					Work address:
+					<br>742 Evergreen Terrace, Springfield, Oregon, 97403</th>
+				<th>
+					Email Chris here:
+					<br><a href = "mailto:s3785752@student.rmit.edu.au">s3785752@student.rmit.edu.au</a>
+				</th>
+				<th>Mobile:
+					<br>xxxx-xxx-xxx
+				</th>
+			</tr>
+		</table>
+	</div>
+</body>
+<script> //Code for opening and closing sidebar. DO NOT TOUCH OR EDIT THIS AS THIS IS WHAT WORKS THE SIDEBAR NAVIGATION
+    function open_sidebar() {
+      document.getElementById("sidebar").style.display = "block";
+    }
+    function close_sidebar() {
+      document.getElementById("sidebar").style.display = "none";
+    }
+</script>
+</html>
